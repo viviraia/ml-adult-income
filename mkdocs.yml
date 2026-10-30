@@ -1,0 +1,41 @@
+site_name: Classificação de renda — Adult Income
+site_description: Projeto de Machine Learning (APS1 e APS2) de Enzo Santoro e Victor Dolnikoff.
+site_author: Enzo Santoro e Victor Dolnikoff
+site_url: https://viviraia.github.io/ml-adult-income/
+repo_url: https://github.com/viviraia/ml-adult-income
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.top
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      execute: false          # usa as saídas salvas; os notebooks não são reexecutados no deploy
+      include_source: true    # botão para baixar o .ipynb
+      remove_tag_config:
+        remove_input_tags:
+          - ocultar_codigo    # esconde o código do bloco de dados comprimidos
+
+markdown_extensions:
+  - tables
+  - admonition
+
+nav:
+  - Início: index.md
+  - APS1 — EDA: aps1.ipynb
+  - APS2 — Classificação: aps2.ipynb

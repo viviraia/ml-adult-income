@@ -37,5 +37,5 @@ markdown_extensions:
 
 nav:
   - Início: index.md
-  - APS1 — EDA: aps1.ipynb
+  - APS1 — EDA: aps2.ipynb
   - APS2 — Classificação: aps2.ipynb
